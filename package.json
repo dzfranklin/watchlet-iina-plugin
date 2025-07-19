@@ -31,27 +31,32 @@
     "window": {
       "distDir": "./dist/ui/window",
       "source": "ui/window/index.html",
-      "publicUrl": "./"
+      "publicUrl": "./",
+      "optimize": false
     },
     "overlay": {
       "distDir": "./dist/ui/overlay",
       "source": "ui/overlay/index.html",
-      "publicUrl": "./"
+      "publicUrl": "./",
+      "optimize": false
     },
     "sidebar": {
       "distDir": "./dist/ui/sidebar",
       "source": "ui/sidebar/index.html",
-      "publicUrl": "./"
+      "publicUrl": "./",
+      "optimize": false
     },
     "global": {
       "distDir": "./dist/",
       "source": "src/global.js",
-      "isLibrary": false
+      "isLibrary": false,
+      "optimize": false
     },
     "entry": {
       "distDir": "./dist/",
       "source": "src/index.js",
-      "isLibrary": false
+      "isLibrary": false,
+      "optimize": false
     }
   }
 }

@@ -1,24 +1,26 @@
 {
-  "name": "Plugin Template",
-  "identifier": "com.example.iina-plugin-template",
-  "version": "1.0.0",
-  "description": "Description here",
+  "name": "Watchlet",
+  "identifier": "dev.dzfranklin.watchlet-iina-plugin",
+  "version": "0.1.0",
+  "description": "Manage episode progress",
   "author": {
-    "name": "IINA Developers",
-    "email": "developers@iina.io",
-    "url": "https://iina.io"
+    "name": "Daniel Franklin",
+    "email": "daniel@danielzfranklin.org",
+    "url": "https://github.com/dzfranklin/watchlet-iina-plugin"
   },
   "entry": "dist/index.js",
-  "global": "dist/global.js",
+  "globalEntry": "dist/global.js",
   "permissions": [
     "show-osd",
-    "file-system",
-    "network-request"
+    "show-alert",
+    "video-overlay",
+    "network-request",
+    "file-system"
   ],
   "sidebarTab": {
-    "name": "Tab"
+    "name": "Watchlet"
   },
   "allowedDomains": ["*"],
-  "preferencesPage": "pref.html",
+  "preferencesPage": "preferences.html",
   "preferenceDefaults": {}
 }

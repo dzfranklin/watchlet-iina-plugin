@@ -7,7 +7,7 @@ const {
   menu,
 } = iina;
 
-console.log("Plugin is running");
+console.log("Watchlet plugin is running - index.js");
 
 standaloneWindow.loadFile("dist/ui/window/index.html");
 
@@ -17,6 +17,7 @@ menu.addItem(
   }),
 );
 
+event.on("iina.window-loaded", () => {
 overlay.loadFile("dist/ui/overlay/index.html");
 
 menu.addItem(
@@ -29,6 +30,7 @@ menu.addItem(
     overlay.hide()
   }),
 );
+});
 
 event.on("iina.window-loaded", () => {
   sidebar.loadFile("dist/ui/sidebar/index.html");

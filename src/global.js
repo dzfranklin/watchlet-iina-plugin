@@ -1,2 +1,2 @@
 const { console } = iina;
-console.log("Plugin is running");
+console.log("Watchlet plugin is running - global.js");
