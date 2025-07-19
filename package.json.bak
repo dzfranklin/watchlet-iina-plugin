@@ -3,9 +3,9 @@
   "version": "0.0.0",
   "description": "",
   "scripts": {
-    "serve-window": "parcel serve ui/window/index.html --dist-dir dist/",
-    "serve-sidebar": "parcel serve ui/sidebar/index.html --dist-dir dist/",
-    "serve-overlay": "parcel serve ui/overlay/index.html --dist-dir dist/",
+    "serve-window": "parcel serve ui/window/index.html --dist-dir dist/ui/window",
+    "serve-sidebar": "parcel serve ui/sidebar/index.html --dist-dir dist/ui/sidebar",
+    "serve-overlay": "parcel serve ui/overlay/index.html --dist-dir dist/ui/overlay",
     "build": "rm -rf dist && parcel build .",
     "check": "tsc && eslint . && prettier --check .",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -39,36 +39,40 @@
       "context": "service-worker",
       "distDir": "./dist/",
       "source": "entrypoints/global.ts",
-      "isLibrary": false,
-      "outputFormat": "global"
+      "outputFormat": "global",
+      "optimize": false
     },
     "entry": {
       "context": "service-worker",
       "distDir": "./dist/",
       "source": "entrypoints/index.ts",
-      "isLibrary": false,
-      "outputFormat": "global"
+      "outputFormat": "global",
+      "optimize": false
     },
     "window": {
       "context": "browser",
-      "distDir": "./dist/",
-      "source": "ui/window/window.html",
+      "distDir": "./dist/ui/window",
+      "source": "ui/window/index.html",
       "publicUrl": "./",
-      "outputFormat": "global"
+      "outputFormat": "global",
+      "optimize": false
     },
     "overlay": {
       "context": "browser",
-      "distDir": "./dist/",
-      "source": "ui/overlay/overlay.html",
+      "distDir": "./dist/ui/overlay",
+      "source": "ui/overlay/index.html",
       "publicUrl": "./",
-      "outputFormat": "global"
+      "outputFormat": "global",
+      "includeNodeModules": true,
+      "optimize": false
     },
     "sidebar": {
       "context": "browser",
-      "distDir": "./dist/",
-      "source": "ui/sidebar/sidebar.html",
+      "distDir": "./dist/ui/sidebar",
+      "source": "ui/sidebar/index.html",
       "publicUrl": "./",
-      "outputFormat": "global"
+      "outputFormat": "global",
+      "optimize": false
     }
   }
 }

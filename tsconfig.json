@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "noEmit": true,
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "strict": true,
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "skipLibCheck": true,
+    "jsx": "react-jsx",
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "typeRoots": [
+      "./node_modules/@types",
+      "./node_modules/iina-plugin-definition"
+    ],
+    "paths": {
+      "@src/*": ["./src/*"],
+      "@entrypoints/*": ["./entrypoints/*"],
+      "@ui/*": ["./ui/*"]
+    }
+  },
+  "exclude": ["parcel-flat-namer.js"],
+  "compileOnSave": false
+}

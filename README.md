@@ -1,5 +1,7 @@
 # watchlet
 
+A plugin for the IINA video player that manages episode progress metadata.
+
 ## Development
 
 ### Setup

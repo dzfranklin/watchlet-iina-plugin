@@ -1,0 +1,6 @@
+*.md
+/dist
+.claude
+.parcel-cache
+.vscode
+node_modules
