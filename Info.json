@@ -1,7 +1,9 @@
 {
   "name": "Watchlet",
   "identifier": "dev.dzfranklin.watchlet-iina-plugin",
-  "version": "0.1.0",
+  "version": "0.0.0",
+  "ghRepo": "dzfranklin/watchlet-iina-plugin",
+  "ghVersion": 0,
   "description": "Manage episode progress",
   "author": {
     "name": "Daniel Franklin",
