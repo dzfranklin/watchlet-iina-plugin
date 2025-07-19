@@ -123,3 +123,5 @@ out
 .vscode/
 *.js.map
 *.css.map
+
+/dist
