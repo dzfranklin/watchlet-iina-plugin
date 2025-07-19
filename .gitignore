@@ -125,3 +125,5 @@ out
 *.css.map
 
 /dist
+
+.claude/*.local.json
